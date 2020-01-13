@@ -1,6 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      header {
+        background: rgb(37,78,112);
+        background: linear-gradient(0deg, rgba(37,78,112,1) 0%, rgba(55,113,142,1) 100%);
+        text-align: center;
+        padding: 20px 0;
+      }
+      header img {
+        max-width: 75%;
+        max-height: 350px;
+      }
+      section {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        max-width: 600px;
+      }
+      section h2 {
+        font-size: 56px;
+        color: rgb(37,78,112);
+      }
+      #downloads a {
+        display: inline-block;
+        color: #fff;
+        background: rgb(37,78,112);
+        border: 1px solid rgb(37,78,112);
+        border-radius: 10px;
+        width: 200px;
+        margin: 15px;
+        padding: 10px;
+      }
+      #sponsors a {
+        display: inline-block;
+        margin: 15px;
+      }
+      #sponsors img {
+        border: 0;
+        border: 1px solid rgb(37,78,112);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      ul li {
+        text-align: left;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <img src="logo.png" alt="sqlc" />
+    </header>
+    <section>
+      <h2>Downloads</h2>
+      <div id="downloads">
+        <a href="https://bin.equinox.io/c/gvM95th6ps1/sqlc-devel-linux-amd64.tgz">Linux</a>
+        <a href="https://bin.equinox.io/c/gvM95th6ps1/sqlc-devel-darwin-amd64.zip">macOS</a>
+      </div>
+      <h2>Sponsors</h2>
+      <div id="sponsors">
+        <a href="https://meter.com">
+          <img src="sponsors/meter.png" alt="Meter" />
+        </a>
+      </div>
+      <h3>Individual Sponsors</h3>
+      <ul>
+        <li><a href="https://github.com/Cyberax">Cyberax</a></li>
+      </ul>
+    </section>
   </body>
 </html>
