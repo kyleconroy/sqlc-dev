@@ -20,14 +20,22 @@
         max-height: 350px;
       }
       section {
-        text-align: center;
         margin: auto;
         padding: 10px;
-        max-width: 600px;
+        max-width: 860px;
+      }
+      section h1 {
+        text-align: center;
+        font-size: 64px;
+        color: #c33c54;
       }
       section h2 {
+        text-align: center;
         font-size: 56px;
         color: rgb(37,78,112);
+      }
+      #downloads {
+        text-align: center;
       }
       #downloads a {
         display: inline-block;
@@ -38,6 +46,9 @@
         width: 200px;
         margin: 15px;
         padding: 10px;
+      }
+      #sponsors {
+        text-align: center;
       }
       #sponsors a {
         display: inline-block;
@@ -59,6 +70,22 @@
       <img src="logo.png" alt="sqlc" />
     </header>
     <section>
+      <h1>Compile SQL to type-safe Go</h1>
+      <p>
+        sqlc generates fully-type safe idiomatic Go code from SQL. Here's how it works:
+      </p>
+      <ol>
+        <li>You write SQL queries</li>
+        <li>You run sqlc to generate Go code that presents type-safe interfaces to those queries</li>
+        <li>You write application code that calls the methods sqlc generated.</li>
+      </ol>
+      <p>
+        Seriously, it's that easy. You don't have to write any boilerplate SQL querying code ever again. Read more in the <a href="https://conroy.org/introducing-sqlc">introduction</a>. 
+      </p>
+      <h2>Contribute</h2>
+      <p>
+        Development happens on Github: <a href="https://github.com/kyleconroy/sqlc">https://github.com/kyleconroy/sqlc</a>.
+      </p>
       <h2>Downloads</h2>
       <div id="downloads">
         <a href="https://bin.equinox.io/c/gvM95th6ps1/sqlc-devel-linux-amd64.tgz">Linux</a>
