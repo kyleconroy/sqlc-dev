@@ -51,7 +51,8 @@ layout: home
   </div>
   <h3>Individual Sponsors</h3>
   <ul>
-    <li><a href="https://github.com/Cyberax">Cyberax</a></li>
+    <li><a href="https://github.com/Cyberax">Alex Besogonov</a></li>
+    <li><a href="https://github.com/myles-mcdonnell">Myles McDonnell</a></li>
   </ul>
 </section>
 
