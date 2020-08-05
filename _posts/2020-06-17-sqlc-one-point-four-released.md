@@ -5,7 +5,14 @@ date:   2020-06-17 13:10:42 -0700
 categories: posts
 ---
 
-This release includes a complete refactor of the compiler internals. The compiler now uses a database-agnostic SQL AST. The PostgreSQL backend uses this new code path by default. I've tested the new path extensively, but you still may run into bugs. If you do, you can use the old code path by setting the the following environment variable: `SQLC_EXPERIMENTAL_PARSER=off`. The old code path will be removed in v1.5.0, so please report any bugs you run into.
+This release includes a complete refactor of the compiler internals. The
+compiler now uses a database-agnostic SQL AST, which the PostgreSQL backend
+uses by default.
+
+I've tested the new path extensively, but you still
+may run into bugs. If you do, you can use the old code path by setting the the
+following environment variable: `SQLC_EXPERIMENTAL_PARSER=off`. The old code
+path will be removed in v1.5.0, so please report any bugs you run into.
 
 A new `:execresult` query command has been added. The generated methods will return `(sql.Result, error)`, the same as [DB.ExecContext](https://golang.org/pkg/database/sql/#DB.ExecContext). 
 

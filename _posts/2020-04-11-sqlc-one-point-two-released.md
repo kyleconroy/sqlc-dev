@@ -5,6 +5,10 @@ date:   2020-04-11 13:10:42 -0700
 categories: posts
 ---
 
+This release brings with it an official Docker image for you whale fans out
+there. A configuration file change allows file systems paths to be a list of
+paths.
+
 ## Core
 * Publish an official Docker container ([#422](https://github.com/kyleconroy/sqlc/pull/422))
 * Configuration values for `schema` and `queries` can now be a list of paths ([#426](https://github.com/kyleconroy/sqlc/pull/426))

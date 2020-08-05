@@ -1,3 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.ninja_deps
+.ninja_log
+node_modules
+css/
